@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Munpa - Mundo de Papás</title>
+  <style>
+    @font-face {
+      font-family: 'HugMeTight';
+      src: url('assets/hug-me-tight.otf') format('opentype');
+    }
+    @font-face {
+      font-family: 'BabyFace';
+      src: url('assets/baby-face.otf') format('opentype');
+    }
+
+    :root {
+      --aqua: #59c6c0;
+      --green: #b4c14b;
+      --yellow: #ffc211;
+      --purple: #887cbc;
+      --pink: #f08eb7;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'HugMeTight', sans-serif;
+      background: #fff;
+      color: var(--purple);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    header, section, footer {
+      width: 100%;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header img {
+      max-width: 400px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: var(--pink);
+      font-family: 'BabyFace', cursive;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--aqua);
+      margin: 1.5rem 0 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      padding: 0 1rem;
+    }
+
+    .soon {
+      background: var(--yellow);
+      color: #fff;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin: 1.5rem 0;
+    }
+
+    .features, .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .feature-box, .benefit-box {
+      background: #f9f9f9;
+      border-radius: 1rem;
+      padding: 1rem;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .feature-box {
+      background: var(--green);
+      color: white;
+    }
+
+    .benefit-box {
+      background: var(--aqua);
+      color: white;
+    }
+
+    .signup {
+      background: var(--purple);
+      color: white;
+      padding: 2rem 1rem;
+      border-radius: 1rem;
+      margin-top: 2rem;
+    }
+
+    input[type="email"] {
+      padding: 0.7rem;
+      font-size: 1rem;
+      width: 70%;
+      max-width: 300px;
+      margin: 1rem auto;
+      display: block;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .signup button {
+      padding: 0.7rem 1.5rem;
+      background: var(--yellow);
+      border: none;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: var(--green);
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="assets/logo-principal.png" alt="Logo Munpa" />
+    <h1>¡Muy pronto!</h1>
+    <p>Una app para mamás y papás modernos con todo lo que necesitas para tu bebé en un solo lugar.</p>
+    <div class="soon">Próximamente en tu celular</div>
+  </header>
+
+  <section>
+    <h2>¿Qué encontrarás en la app?</h2>
+    <div class="features">
+      <div class="feature-box">👶 Pediatras con reviews</div>
+      <div class="feature-box">🍼 Asesoras de lactancia y sueño</div>
+      <div class="feature-box">🧸 Niñeras certificadas por hora</div>
+      <div class="feature-box">🏡 Guarderías y colegios</div>
+      <div class="feature-box">🛍️ Tiendas locales y productos clave</div>
+      <div class="feature-box">🎉 Lugares para salir con tu bebé</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Beneficios de usar Munpa</h2>
+    <div class="benefits">
+      <div class="benefit-box">❤️ Todo en un solo lugar</div>
+      <div class="benefit-box">🌟 Recomendaciones reales</div>
+      <div class="benefit-box">📍 Encuentra lo mejor cerca de ti</div>
+    </div>
+  </section>
+
+  <section class="signup">
+    <h2>¿Quieres ser de los primeros?</h2>
+    <p>Déjanos tu correo y te avisamos cuando lancemos la app.</p>
+    <input type="email" placeholder="Tu correo electrónico" />
+    <button>Notificarme</button>
+  </section>
+
+  <footer>
+    © 2025 Munpa · Mundo de Papás
+  </footer>
+
+</body>
+</html>
